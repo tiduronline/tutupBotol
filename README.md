@@ -2,20 +2,36 @@
 
 This is just a simple command line to help you to add blocked coin miner domains into your hosts file which probably the domain is used our RAM or other stuff in our device to do mining. 
 
-This tool is just to help you to remove and append list of domains to your hosts'file in your Sistem. So where come from the list? basically, I don't collect the list my own. But I got from adBlock list coin domain. 
+This tool is just to help us easily remove and append domain list into our hosts file in our sistem. But where come from that list? 
+Actually, I don't collect the list my own. But I got from Hoshsadiq repository for that list coin domain. 
 
 [NoCoin adblock list](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt) from [Hoshsadiq](https://github.com/hoshsadiq) repository. 
 
 The I choose that list because it's always update.
 
+Basically, the tool will modify hosts file which is pretty serious file for security reason. Try it at your own risk. **Backup your hosts file before execute the command**.
+
+Tested on:
+- OSX
+- Windows
+- Ubuntu
+
+
+## Binary Version
+
+- Version v0.1
+    - [Windows](/binary/tutup-botol-win.v0.1.zip)
+    - [Ubuntu](/binary/tutup-botol-ubuntu.v0.1.zip)
+    - [MacOS](/binary/tutup-botol-osx.v0.1.zip)
+
 
 ## How to use
 
 ```bash
-$ git clone --single-branch --depth=1 --branch master git@github.com:tiduronline/tutupBotol.git 
+$ git clone git@github.com:tiduronline/tutupBotol.git 
 $ cd tutupBotol
-$ make build
-$ sudo ./tutup-botol
+$ make install
+$ sudo ./bin/tutup-botol --block
 ```
 If command successfully executed. The list will be appended to hosts file. To verify the list, you can open the hosts file and make sure that each coin domain is pointed to IP `0.0.0.0`
 
@@ -32,6 +48,7 @@ Usage of ./tutup-botol:
         Unblock coin domain
   -update
         Update list of coin domain
+
 ```
 
 ##### Description of command:
@@ -45,3 +62,4 @@ But if those comments incidentally removed. Just add `# BOF D COINS` into hosts 
 
 ## Thanks to 
 - [Hoshsadiq](https://github.com/hoshsadiq)
+- [Anggrainini](https://github.com/anggrainini), I borrow her device to test Win version. :P
