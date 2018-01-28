@@ -25,7 +25,6 @@ Tested on:
     - [MacOS](/binary/tutup-botol.osx.v0.1.tar) ([Checksum](/binary/tutup-botol.osx.sha256))
 
 
-
 ## How to use
 
 ```bash
@@ -56,10 +55,14 @@ Usage of ./tutup-botol:
 - `block` and `update` option is used to save new list
 - `clean` option is used to clean the list from hosts file
 
-If the tool's executed, there will be two important comments in the hosts file 
-`# BOF D COINS` and `# EOF D COINS`. The tool use that comments as mark. So please do not remove that comments. Tool can not work properly if those comments removed. 
+If the tool executed, there's will two important comments in the hosts file 
+`# BOF D COINS` and `# EOF D COINS`. Tool use that comments as marker. So please do not remove those comments. Tool can not work properly if those comments removed. 
 
 But if those comments incidentally removed. Just add `# BOF D COINS` into hosts file and place it before coin domains list and place `# EOF D COINS` after coin domain list. 
+
+#### Video
+[![asciicast](https://asciinema.org/a/kiljuXTmOcAMamDzWsXjZgPd1.png)](https://asciinema.org/a/kiljuXTmOcAMamDzWsXjZgPd1)
+
 
 ## Thanks to 
 - [Hoshsadiq](https://github.com/hoshsadiq)
