@@ -27,13 +27,36 @@ Tested on:
 
 ## How to use
 
+##### Linux and OSX
 ```bash
 $ git clone git@github.com:tiduronline/tutupBotol.git 
 $ cd tutupBotol
 $ make install
 $ sudo ./bin/tutup-botol --block
 ```
-If command successfully executed. The list will be appended to hosts file. To verify the list, you can open the hosts file and make sure that each coin domain is pointed to IP `0.0.0.0`
+If command successfully executed. The list will be appended to hosts file. To verify the list, just open the hosts file and make sure that each coin domain is pointed to IP `0.0.0.0`.
+
+
+##### Windows
+
+For Win user, we have to run as Administrator level. Here the steps for Win user.
+
+- Download tool for Windows version
+- Extract tar file, then you will see file tutup-botol.exe
+- Open Search and type cmd
+- Right click on the cmd
+- Choose option "Run as Adminstrator"
+- From cmd, go to folder where tutup-botol.exe placed
+- Run tutup-botol.exe using your current cmd
+
+```
+C:> tutup-botol.exe --block
+Hosts has been updated
+
+```
+
+Try to open coinhive . com in browser. If it can't be accessed, that mean tool has successfully block coin miner domain as long as our connection work well or we can open `C:\Windows\System32\drivers\etc\hosts` using our text editor.
+
 
 ## Command Options
 
