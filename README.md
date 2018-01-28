@@ -20,9 +20,10 @@ Tested on:
 ## Binary Version
 
 - Version v0.1
-    - [Windows](/binary/tutup-botol-win.v0.1.zip)
-    - [Ubuntu](/binary/tutup-botol-ubuntu.v0.1.zip)
-    - [MacOS](/binary/tutup-botol-osx.v0.1.zip)
+    - [Windows](/binary/tutup-botol.win.v0.1.tar) ([Checksum](/binary/tutup-botol.win.sha256))
+    - [Ubuntu](/binary/tutup-botol.ubuntu.v0.1.tar) ([Checksum](/binary/tutup-botol.ubuntu.sha256))
+    - [MacOS](/binary/tutup-botol.osx.v0.1.tar) ([Checksum](/binary/tutup-botol.osx.sha256))
+
 
 
 ## How to use
