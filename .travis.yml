@@ -12,7 +12,3 @@ script:
 
 notification:
     email: false
-
-branches:
-    only:
-    - travis
