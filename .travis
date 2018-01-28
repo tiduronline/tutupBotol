@@ -13,6 +13,6 @@ script:
 notification:
     email: false
 
-branch:
+branches:
     only:
     - travis
