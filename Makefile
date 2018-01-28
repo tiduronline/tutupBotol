@@ -1,5 +1,5 @@
-.PHONY: build
-build:
+.PHONY: install
+install:
 	go build -o tutup-botol
 
 .PHONY: test
