@@ -1,1 +1,18 @@
-.travis
+language: go
+
+go:
+    - 1.x
+    - master
+
+install:
+    - make install
+
+script:
+    - make test
+
+notification:
+    email: false
+
+branch:
+    only:
+    - travis
