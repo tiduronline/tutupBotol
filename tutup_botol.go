@@ -111,7 +111,8 @@ func updateList(config Config, hosts []string) {
 
     b_hosts := []byte(s_new_hosts)
     ioutil.WriteFile(config.HostFile, b_hosts, 0644)
-    
+
+
 }
 
 // Clean List will remove all coin domains

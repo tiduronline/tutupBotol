@@ -4,6 +4,8 @@ import (
     "strings"
     "io/ioutil"
     "fmt"
+    "runtime"
+    "os"
 )
 
 // Simple Config using struct
@@ -22,7 +24,19 @@ func init_config() Config {
     config.EofFooter        = "# EOF D COINS"
     config.UpdateEndpoint   = "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
     config.HostFile         = "/etc/hosts"
-    config.Debug            = true
+
+    if runtime.GOOS=="windows" {
+        config.HostFile = "C:\\Windows\\System32\\drivers\\etc\\hosts"
+    }
+    
+    config.Debug            = false
+
+    if _, err := os.Stat(config.HostFile); os.IsNotExist(err) {
+        fmt.Println(err)
+        fmt.Println("Hosts file is not found")
+        os.Exit(0)
+    }
+
     return config
 }
 // End Of Config
