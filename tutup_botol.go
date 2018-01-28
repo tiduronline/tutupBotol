@@ -34,7 +34,7 @@ func parseArgs() string {
         return choiced[0]
     }
 
-    fmt.Println("Sorry, please choose only one option\n")
+    fmt.Println("Sorry, please choose only one option")
     flag.PrintDefaults()
     return "" 
 }
